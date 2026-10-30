@@ -1,0 +1,29 @@
+:root{--navy:#0b2447;--navy2:#19376d;--blue:#2a5fa8;--gold:#c9a227;--bg:#f2f4f8;--card:#fff;--line:#e1e5ee;--txt:#1b2437;--mut:#6b7488}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--txt);font-size:14px}
+.login{min-height:100vh;display:grid;place-items:center;background:var(--navy);padding:16px}
+.box{background:#fff;border-radius:14px;padding:28px;width:100%;max-width:400px;box-shadow:0 20px 50px #0005}
+.brand{display:flex;align-items:center;gap:8px;font-weight:700;letter-spacing:.5px;color:var(--navy);font-size:20px}.brand span{color:var(--gold)}
+h1,h2,h3{margin:0 0 12px;color:var(--navy)}h2{font-size:20px}h3{font-size:15px}.mut{color:var(--mut);font-size:12px}
+input,select,textarea{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:8px;font:inherit;margin:4px 0 12px;background:#fff}
+label{font-size:12px;color:var(--mut);font-weight:600}
+button{font:inherit;cursor:pointer;border:0;border-radius:8px;padding:9px 14px;background:var(--navy2);color:#fff;font-weight:600;transition:.15s}button:hover{background:var(--blue)}
+button.ghost{background:#fff;color:var(--navy2);border:1px solid var(--line)}button.ghost:hover{background:var(--bg)}button.red{background:#b3261e}button.green{background:#1e7a46}button.sm{padding:5px 10px;font-size:12px}
+.app{display:flex;min-height:100vh}.side{width:232px;background:var(--navy);color:#cdd7ea;padding:16px 10px;display:flex;flex-direction:column;gap:4px;position:sticky;top:0;height:100vh}
+.side .brand{color:#fff;padding:4px 10px 16px}.side a{display:flex;gap:10px;align-items:center;padding:10px 12px;border-radius:8px;cursor:pointer;transition:.15s}
+.side a:hover{background:#ffffff14}.side a.on{background:#ffffff22;color:#fff;box-shadow:inset 3px 0 var(--gold)}
+.main{flex:1;min-width:0}.top{background:#fff;border-bottom:1px solid var(--line);padding:12px 24px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.content{padding:24px;animation:fade .25s}@keyframes fade{from{opacity:0;transform:translateY(4px)}}
+.demo{background:#fff7dc;color:#7a5b00;border:1px solid #ecd78a;border-radius:6px;padding:3px 8px;font-size:11px;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px;margin-bottom:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:16px}.stat b{display:block;font-size:26px;color:var(--navy)}.stat span{color:var(--mut);font-size:12px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.tw{overflow-x:auto}table{width:100%;border-collapse:collapse}th{text-align:left;font-size:11px;text-transform:uppercase;color:var(--mut);padding:9px;border-bottom:2px solid var(--line)}td{padding:10px 9px;border-bottom:1px solid var(--line)}tr.cl:hover{background:#f7f9fd;cursor:pointer}
+.badge{display:inline-block;padding:3px 9px;border-radius:99px;font-size:11px;font-weight:600;background:#e8ecf4;color:#3a4560;white-space:nowrap}
+.b-g{background:#dff3e7;color:#14633a}.b-a{background:#fdf0cf;color:#7a5b00}.b-r{background:#fadcda;color:#8f1d16}.b-b{background:#dce8fa;color:#1d4a8a}
+.bar{display:flex;align-items:center;gap:8px;margin:6px 0}.bar i{display:block;height:10px;border-radius:5px;background:var(--blue);min-width:4px}.bar span{width:150px;font-size:12px;color:var(--mut)}
+.bar{overflow:hidden}.bar em{font-style:normal;font-size:12px;font-weight:600}
+.tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.tools input,.tools select{width:auto;margin:0;flex:1;min-width:130px}
+.modal{position:fixed;inset:0;background:#0b244788;display:grid;place-items:center;padding:12px;z-index:9}.modal>div{background:#fff;border-radius:14px;padding:22px;max-width:760px;width:100%;max-height:92vh;overflow:auto}
+.msg{padding:10px 12px;border-radius:8px;margin:8px 0}.msg.err{background:#fadcda;color:#8f1d16}.msg.ok{background:#dff3e7;color:#14633a}.msg.warn{background:#fdf0cf;color:#6b5000}.empty{text-align:center;color:var(--mut);padding:30px}
+.unread{border-left:4px solid var(--gold)}.menu{display:none}
+@media(max-width:800px){.side{position:fixed;z-index:8;left:-240px;transition:.2s}.side.open{left:0}.menu{display:inline-block}.content{padding:14px}}
