@@ -1,3 +1,0 @@
-pytest
-mongomock
-httpx
