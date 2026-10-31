@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pymongo[srv]
+PyJWT
+python-multipart
+python-dotenv
+apscheduler
+pillow
+pypdf
+cryptography
+pytesseract
